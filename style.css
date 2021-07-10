@@ -1,0 +1,152 @@
+:root{
+    --clr-primary:hsl(356, 100%, 66%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header {
+    background: url(images/bg-pattern-intro.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: clip;
+    border-bottom-left-radius: 100px;
+    height: 100vh;
+    background-color: var(--clr-primary);
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+nav{
+    position: absolute;
+    background-color: #fff;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+nav li{
+    padding: 15px 0;
+}
+nav a{
+    color: #000;
+    font-size: large;
+    font-weight: 600;
+}
+nav button{
+    background-color: inherit;
+    border: none;
+}
+nav button i{
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--clr-primary);
+}
+.toggle{
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: large;
+}
+.product-content, .company-content, .connect-content, nav, .close, .hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.product-content, .company-content, .connect-content {
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    opacity: 0.6;
+    width: 80%;
+    margin: 10px auto;
+}
+.product-content a, .company-content a, .connect-content a{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+.login::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    border: 1px solid #c0c0c0;
+    
+}
+.btn{
+    background-color: var(--clr-primary);
+    padding: 10px 35px;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+.btn a{
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 646px) {
+    header{
+        flex-direction: row;
+    }
+    .nav{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav li{
+        display: inline;
+    }
+    .nav li a, .nav li i {
+        color: #fff;
+    }
+    .login::before{
+        display: none;
+    }
+    .product, .company,.connect {
+        position: relative;
+        padding: 0 5px;
+    }
+    .product-content, .company-content, .connect-content{
+        position: absolute;
+        background-color: #fff;
+        opacity: 1;
+        text-align: left;
+        width: 150px;
+        padding-left: 10px;
+        top: 80%;
+        left: 0;
+    }
+  
+    .product-content a, .company-content a, .connect-content a{
+        color: #000 !important; 
+        opacity: 0.75;
+    }
+    .product-content a:hover, .company-content a:hover, .connect-content a:hover{
+        opacity: 1;
+    }
+    .toggle{
+        display: none;
+    }
+}
+
+
+
+
+
