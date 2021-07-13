@@ -9,6 +9,9 @@
     list-style: none;
     font-family: 'Overpass', sans-serif;
 }
+img{
+    width: 100%;
+}
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -128,7 +131,30 @@ nav button i{
     opacity: 1;
     padding: 15px 20px;
 }
-
+.banner{
+    margin: 50px auto;
+}
+.banner h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+}
+.banner-content1{
+    margin-top: 35px;
+    padding: 0 3rem;
+    line-height: 1.5;
+}
+.banner-content1 h2{
+    padding: 20px 0;
+}
+.desktop{
+    display: none;
+}
 
 @media only screen and (min-width: 670px) {
   
@@ -191,6 +217,29 @@ nav button i{
     }
     .hero-text{
         width: 100%;
+    }
+    .banner-content{
+        flex-direction: row;
+        text-align: left;
+    }
+    .split{
+        flex-basis: 100%;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .banner{
+        position: relative;
+        margin-top: 100px;
+    }
+    .desktop{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 50%;
     }
 }
 
