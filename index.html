@@ -18,44 +18,64 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
-      <nav class="nav" id="nav">
-        <div>
-          <li class="product">
-            <button onclick="products()" class="dropbtn"><a href="#">Product <i class="fas fa-chevron-down"></i></a></button>
-            <div class="product-content" id="product-content">
-              <a href="#">Overview</a>
-              <a href="#">Pricing</a>
-              <a href="#">Marketplace</a>
-              <a href="#">Features</a>
-              <a href="#">Integrations</a>
-            </div>
-          </li>
-          <li class="company">
-            <button onclick="company()"><a href="#">Company <i class="fas fa-chevron-down"></i></a></button>
-            <div class="company-content" id="company-content">
-              <a href="#"> About</a>
-              <a href="#">Team</a>
-              <a href="#">Blog</a>
-              <a href="#">Careers</a>
-            </div>
-          </li>
-          <li class="connect">
-            <button onclick="connect()"><a href="#">Connect <i class="fas fa-chevron-down"></i></a></button>
-            <div class="connect-content" id="connect-content">
-              <a href="#"> Contact</a>
-              <a href="#">Newsletter</a>
-              <a href="#">LinkedIn</a>
-            </div>
-          </li>
+      <div class="header">
+        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
+        <nav class="nav" id="nav">
+          <div>
+            <li class="product">
+              <button onclick="products()" class="dropbtn"><a href="#">Product <i class="fas fa-chevron-down"></i></a></button>
+              <div class="product-content" id="product-content">
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">Integrations</a>
+              </div>
+            </li>
+            <li class="company">
+              <button onclick="company()"><a href="#">Company <i class="fas fa-chevron-down"></i></a></button>
+              <div class="company-content" id="company-content">
+                <a href="#"> About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+              </div>
+            </li>
+            <li class="connect">
+              <button onclick="connect()"><a href="#">Connect <i class="fas fa-chevron-down"></i></a></button>
+              <div class="connect-content" id="connect-content">
+                <a href="#"> Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </li>
+          </div>
+          <div class="login">
+            <li><a href="#">Login</a></li>
+           <li><button class="btn"><a href="#">Sign Up</a></button></li>
+          </div>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>A modern publishing platform</h1>
+          <p> Grow your audience and build your online brand</p>
         </div>
-        <div class="login">
-          <li><a href="#">Login</a></li>
-         <li><button class="btn"><a href="#">Sign Up</a></button></li>
+        <div class="hero-btn-wrapper">
+          <span class="btn btn1"><a href="#">Start for free</a></span>
+          <span class="btn btnalt"><a href="#">Learn More</a></span>
         </div>
-      </nav>
+      </div>
+ 
     </header>
+    <!-- toggle button -->
     <div class="toggle" onclick="toggle()" id="toggle"><i class="open fas fa-bars" id="open"></i><i class="close fas fa-times" id="close"></i> </div>
+    
+    
+  
+
+
+
   </div>
 
 
@@ -79,8 +99,6 @@
    
   </script>
   <!--
-  A modern publishing platform
-  Grow your audience and build your online brand
 
   Start for Free
   Learn More
@@ -133,7 +151,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">regmi42</a>.
   </div>
 </body>
 </html>
